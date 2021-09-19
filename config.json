@@ -1,0 +1,68 @@
+{
+  "breakdown": {
+    "background": {
+      "bitter-lime.png": 0.01,
+      "bittersweet.png": 0.12,
+      "burnt-sienna.png": 0.14,
+      "deep-space-sparkle.png": 0.1,
+      "go-green.png": 0.14,
+      "gunmetal.png": 0.01,
+      "light-cyan.png": 0.11,
+      "ruby-red.png": 0.37
+    },
+    "body": {
+      "alien.png": 0.17,
+      "blue.png": 0.06,
+      "green.png": 0.07,
+      "orange.png": 0.25,
+      "red.png": 0.45
+    },
+    "eyes": {
+      "alt-shades.png": 0.06,
+      "block-eyes.png": 0.12,
+      "cool-glasses.png": 0.06,
+      "left-wink.png": 0.02,
+      "right-wink.png": 0.02,
+      "round-eyes.png": 0.12,
+      "sleepy.png": 0.03,
+      "smiley.png": 0.02,
+      "swirley-eyes.png": 0.55
+    },
+    "face": {
+      "dimples.png": 0.1,
+      "resting-face.png": 0.27,
+      "shocked.png": 0.22,
+      "smile.png": 0.41
+    },
+    "jersey": {
+      "black-red.png": 0.01,
+      "blue-dark-blue.png": 0.04,
+      "blue-gold.png": 0.01,
+      "blue-grey.png": 0.05,
+      "blue-orange.png": 0.01,
+      "blue-red.png": 0.01,
+      "blue-silver.png": 0.01,
+      "dark-blue-gold.png": 0.04,
+      "dark-blue.png": 0.03,
+      "gold-blue.png": 0.02,
+      "gold-purple.png": 0.03,
+      "green-blue.png": 0.05,
+      "green-cream.png": 0.04,
+      "green-white.png": 0.03,
+      "orange-blue.png": 0.04,
+      "red-black.png": 0.03,
+      "red-gold.png": 0.03,
+      "red-silver.png": 0.04,
+      "teal-purple.png": 0.05,
+      "white-red.png": 0.43
+    },
+    "stripes": {
+      "lightning.png": 0.08,
+      "straight.png": 0.17,
+      "thick.png": 0.23,
+      "wavy.png": 0.18,
+      "wong.png": 0.34
+    }
+  },
+  "order": ["background", "body", "eyes", "face", "jersey", "stripes"]
+}
