@@ -3,7 +3,7 @@ const weighted = require("weighted");
 const _ = require("lodash");
 
 const generateRandomSet = (breakdown, id) => {
-  const tmp = { id };
+  const tmp = {};
   Object.keys(breakdown).forEach((attr) => {
     const randomSelection = weighted.select(breakdown[attr]);
     tmp[attr] = randomSelection;
@@ -29,7 +29,12 @@ const main = () => {
     }
   }
 
-  fs.writeFileSync("./metadata.json", JSON.stringify(metadata));
+  const metadataWithId = metadata.map((item, index) => ({
+    id: index + 1,
+    ...item,
+  }));
+
+  fs.writeFileSync("./metadata.json", JSON.stringify(metadataWithId));
 };
 
 main();
