@@ -2,8 +2,8 @@ const fs = require("fs");
 const weighted = require("weighted");
 const _ = require("lodash");
 
-const generateRandomSet = (breakdown) => {
-  const tmp = {};
+const generateRandomSet = (breakdown, id) => {
+  const tmp = { id };
   Object.keys(breakdown).forEach((attr) => {
     const randomSelection = weighted.select(breakdown[attr]);
     tmp[attr] = randomSelection;
@@ -20,7 +20,7 @@ const main = () => {
   const { breakdown } = JSON.parse(fs.readFileSync("./config.json", "utf-8"));
 
   while (numberOfImagesCreated < NUMBER_OF_IMAGES_TO_CREATE) {
-    const randomSet = generateRandomSet(breakdown);
+    const randomSet = generateRandomSet(breakdown, numberOfImagesCreated + 1);
 
     // ensure sets are completely unique
     if (!_.some(metadata, randomSet)) {
