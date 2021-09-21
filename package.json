@@ -6,8 +6,11 @@
   "bin": {
     "athletic-tigers": "cli.js"
   },
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "metadata": "node ./generate-metadata.js",
+    "nfts": "node ./generate-nfts.js",
+    "configs": "node ./create-configs.js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,8 @@
   "dependencies": {
     "canvas": "^2.8.0",
     "image-data-uri": "^2.0.1",
+    "imagemin": "^8.0.1",
+    "imagemin-pngquant": "^9.0.2",
     "lodash": "^4.17.21",
     "merge-images": "^2.0.0",
     "weighted": "^0.3.0"
