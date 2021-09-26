@@ -1,7 +1,7 @@
-const fs = require("fs");
-const weighted = require("weighted");
-const _ = require("lodash");
-const path = require("path");
+import fs from "fs";
+import weighted from "weighted";
+import path from "path";
+import _ from "lodash";
 
 const NAME = "Smiley Facez NFT #";
 const SYMBOL = "SFZ";
@@ -39,11 +39,21 @@ const createMetadata = (attrs, index) => {
   const metadata = {
     name: `${NAME}${index + 1}`,
     symbol: SYMBOL,
+    image: `${index}.png`,
+    properties: {
+      files: [
+        {
+          uri: `${index}.png`,
+          type: "image/png",
+        },
+      ],
+      category: "image",
+      creators: CREATORS,
+    },
     description: DESCRIPTION,
     seller_fee_basis_points: SELLER_FEE_BASIS_POINTS,
     attributes,
     collection: COLLECTION,
-    creators: CREATORS,
   };
 
   fs.writeFileSync(`./assets/${index}.json`, JSON.stringify(metadata));

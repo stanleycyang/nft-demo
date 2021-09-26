@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-
-const fs = require("fs");
+import fs from "fs";
 
 const generateRandoms = (numberOfAttrs = 1, total = 100) => {
   const numbers = [];
